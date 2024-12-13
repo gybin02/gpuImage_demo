@@ -26,112 +26,115 @@ import jp.co.cyberagent.android.gpuimage.filter.*
 import java.util.*
 
 object GPUImageFilterTools {
+
+    val filterList = FilterRepo().apply {
+        addFilter("Contrast", FilterType.CONTRAST)
+        addFilter("Invert", FilterType.INVERT)
+        addFilter("Pixelation", FilterType.PIXELATION)
+        addFilter("Hue", FilterType.HUE)
+        addFilter("Gamma", FilterType.GAMMA)
+        addFilter("Brightness", FilterType.BRIGHTNESS)
+        addFilter("Sepia", FilterType.SEPIA)
+        addFilter("Grayscale", FilterType.GRAYSCALE)
+        addFilter("Sharpness", FilterType.SHARPEN)
+        addFilter("Sobel Edge Detection", FilterType.SOBEL_EDGE_DETECTION)
+        addFilter("Threshold Edge Detection", FilterType.THRESHOLD_EDGE_DETECTION)
+        addFilter("3x3 Convolution", FilterType.THREE_X_THREE_CONVOLUTION)
+        addFilter("Emboss", FilterType.EMBOSS)
+        addFilter("Posterize", FilterType.POSTERIZE)
+        addFilter("Grouped filters", FilterType.FILTER_GROUP)
+        addFilter("Saturation", FilterType.SATURATION)
+        addFilter("Exposure", FilterType.EXPOSURE)
+        addFilter("Highlight Shadow", FilterType.HIGHLIGHT_SHADOW)
+        addFilter("Monochrome", FilterType.MONOCHROME)
+        addFilter("Opacity", FilterType.OPACITY)
+        addFilter("RGB", FilterType.RGB)
+        addFilter("White Balance", FilterType.WHITE_BALANCE)
+        addFilter("Vignette", FilterType.VIGNETTE)
+        addFilter("ToneCurve", FilterType.TONE_CURVE)
+
+        addFilter("Luminance", FilterType.LUMINANCE)
+        addFilter("Luminance Threshold", FilterType.LUMINANCE_THRESHSOLD)
+
+        addFilter("Blend (Difference)", FilterType.BLEND_DIFFERENCE)
+        addFilter("Blend (Source Over)", FilterType.BLEND_SOURCE_OVER)
+        addFilter("Blend (Color Burn)", FilterType.BLEND_COLOR_BURN)
+        addFilter("Blend (Color Dodge)", FilterType.BLEND_COLOR_DODGE)
+        addFilter("Blend (Darken)", FilterType.BLEND_DARKEN)
+        addFilter("Blend (Dissolve)", FilterType.BLEND_DISSOLVE)
+        addFilter("Blend (Exclusion)", FilterType.BLEND_EXCLUSION)
+        addFilter("Blend (Hard Light)", FilterType.BLEND_HARD_LIGHT)
+        addFilter("Blend (Lighten)", FilterType.BLEND_LIGHTEN)
+        addFilter("Blend (Add)", FilterType.BLEND_ADD)
+        addFilter("Blend (Divide)", FilterType.BLEND_DIVIDE)
+        addFilter("Blend (Multiply)", FilterType.BLEND_MULTIPLY)
+        addFilter("Blend (Overlay)", FilterType.BLEND_OVERLAY)
+        addFilter("Blend (Screen)", FilterType.BLEND_SCREEN)
+        addFilter("Blend (Alpha)", FilterType.BLEND_ALPHA)
+        addFilter("Blend (Color)", FilterType.BLEND_COLOR)
+        addFilter("Blend (Hue)", FilterType.BLEND_HUE)
+        addFilter("Blend (Saturation)", FilterType.BLEND_SATURATION)
+        addFilter("Blend (Luminosity)", FilterType.BLEND_LUMINOSITY)
+        addFilter("Blend (Linear Burn)", FilterType.BLEND_LINEAR_BURN)
+        addFilter("Blend (Soft Light)", FilterType.BLEND_SOFT_LIGHT)
+        addFilter("Blend (Subtract)", FilterType.BLEND_SUBTRACT)
+        addFilter("Blend (Chroma Key)", FilterType.BLEND_CHROMA_KEY)
+        addFilter("Blend (Normal)", FilterType.BLEND_NORMAL)
+
+        addFilter("Lookup (Amatorka)", FilterType.LOOKUP_AMATORKA)
+        addFilter("Gaussian Blur", FilterType.GAUSSIAN_BLUR)
+        addFilter("Crosshatch", FilterType.CROSSHATCH)
+
+        addFilter("Box Blur", FilterType.BOX_BLUR)
+        addFilter("CGA Color Space", FilterType.CGA_COLORSPACE)
+        addFilter("Dilation", FilterType.DILATION)
+        addFilter("Kuwahara", FilterType.KUWAHARA)
+        addFilter("RGB Dilation", FilterType.RGB_DILATION)
+        addFilter("Sketch", FilterType.SKETCH)
+        addFilter("Toon", FilterType.TOON)
+        addFilter("Smooth Toon", FilterType.SMOOTH_TOON)
+        addFilter("Halftone", FilterType.HALFTONE)
+
+        addFilter("Bulge Distortion", FilterType.BULGE_DISTORTION)
+        addFilter("Glass Sphere", FilterType.GLASS_SPHERE)
+        addFilter("Haze", FilterType.HAZE)
+        addFilter("Laplacian", FilterType.LAPLACIAN)
+        addFilter("Non Maximum Suppression", FilterType.NON_MAXIMUM_SUPPRESSION)
+        addFilter("Sphere Refraction", FilterType.SPHERE_REFRACTION)
+        addFilter("Swirl", FilterType.SWIRL)
+        addFilter("Weak Pixel Inclusion", FilterType.WEAK_PIXEL_INCLUSION)
+        addFilter("False Color", FilterType.FALSE_COLOR)
+
+        addFilter("Color Balance", FilterType.COLOR_BALANCE)
+
+        addFilter("Levels Min (Mid Adjust)", FilterType.LEVELS_FILTER_MIN)
+
+        addFilter("Bilateral Blur", FilterType.BILATERAL_BLUR)
+
+        addFilter("Zoom Blur", FilterType.ZOOM_BLUR)
+
+        addFilter("Transform (2-D)", FilterType.TRANSFORM2D)
+
+        addFilter("Solarize", FilterType.SOLARIZE)
+
+        addFilter("Vibrance", FilterType.VIBRANCE)
+    }
+
     fun showDialog(
         context: Context,
-        listener: (filter: GPUImageFilter) -> Unit
+        listener: (filter: GPUImageFilter) -> Unit,
     ) {
-        val filters = FilterList().apply {
-            addFilter("Contrast", FilterType.CONTRAST)
-            addFilter("Invert", FilterType.INVERT)
-            addFilter("Pixelation", FilterType.PIXELATION)
-            addFilter("Hue", FilterType.HUE)
-            addFilter("Gamma", FilterType.GAMMA)
-            addFilter("Brightness", FilterType.BRIGHTNESS)
-            addFilter("Sepia", FilterType.SEPIA)
-            addFilter("Grayscale", FilterType.GRAYSCALE)
-            addFilter("Sharpness", FilterType.SHARPEN)
-            addFilter("Sobel Edge Detection", FilterType.SOBEL_EDGE_DETECTION)
-            addFilter("Threshold Edge Detection", FilterType.THRESHOLD_EDGE_DETECTION)
-            addFilter("3x3 Convolution", FilterType.THREE_X_THREE_CONVOLUTION)
-            addFilter("Emboss", FilterType.EMBOSS)
-            addFilter("Posterize", FilterType.POSTERIZE)
-            addFilter("Grouped filters", FilterType.FILTER_GROUP)
-            addFilter("Saturation", FilterType.SATURATION)
-            addFilter("Exposure", FilterType.EXPOSURE)
-            addFilter("Highlight Shadow", FilterType.HIGHLIGHT_SHADOW)
-            addFilter("Monochrome", FilterType.MONOCHROME)
-            addFilter("Opacity", FilterType.OPACITY)
-            addFilter("RGB", FilterType.RGB)
-            addFilter("White Balance", FilterType.WHITE_BALANCE)
-            addFilter("Vignette", FilterType.VIGNETTE)
-            addFilter("ToneCurve", FilterType.TONE_CURVE)
 
-            addFilter("Luminance", FilterType.LUMINANCE)
-            addFilter("Luminance Threshold", FilterType.LUMINANCE_THRESHSOLD)
-
-            addFilter("Blend (Difference)", FilterType.BLEND_DIFFERENCE)
-            addFilter("Blend (Source Over)", FilterType.BLEND_SOURCE_OVER)
-            addFilter("Blend (Color Burn)", FilterType.BLEND_COLOR_BURN)
-            addFilter("Blend (Color Dodge)", FilterType.BLEND_COLOR_DODGE)
-            addFilter("Blend (Darken)", FilterType.BLEND_DARKEN)
-            addFilter("Blend (Dissolve)", FilterType.BLEND_DISSOLVE)
-            addFilter("Blend (Exclusion)", FilterType.BLEND_EXCLUSION)
-            addFilter("Blend (Hard Light)", FilterType.BLEND_HARD_LIGHT)
-            addFilter("Blend (Lighten)", FilterType.BLEND_LIGHTEN)
-            addFilter("Blend (Add)", FilterType.BLEND_ADD)
-            addFilter("Blend (Divide)", FilterType.BLEND_DIVIDE)
-            addFilter("Blend (Multiply)", FilterType.BLEND_MULTIPLY)
-            addFilter("Blend (Overlay)", FilterType.BLEND_OVERLAY)
-            addFilter("Blend (Screen)", FilterType.BLEND_SCREEN)
-            addFilter("Blend (Alpha)", FilterType.BLEND_ALPHA)
-            addFilter("Blend (Color)", FilterType.BLEND_COLOR)
-            addFilter("Blend (Hue)", FilterType.BLEND_HUE)
-            addFilter("Blend (Saturation)", FilterType.BLEND_SATURATION)
-            addFilter("Blend (Luminosity)", FilterType.BLEND_LUMINOSITY)
-            addFilter("Blend (Linear Burn)", FilterType.BLEND_LINEAR_BURN)
-            addFilter("Blend (Soft Light)", FilterType.BLEND_SOFT_LIGHT)
-            addFilter("Blend (Subtract)", FilterType.BLEND_SUBTRACT)
-            addFilter("Blend (Chroma Key)", FilterType.BLEND_CHROMA_KEY)
-            addFilter("Blend (Normal)", FilterType.BLEND_NORMAL)
-
-            addFilter("Lookup (Amatorka)", FilterType.LOOKUP_AMATORKA)
-            addFilter("Gaussian Blur", FilterType.GAUSSIAN_BLUR)
-            addFilter("Crosshatch", FilterType.CROSSHATCH)
-
-            addFilter("Box Blur", FilterType.BOX_BLUR)
-            addFilter("CGA Color Space", FilterType.CGA_COLORSPACE)
-            addFilter("Dilation", FilterType.DILATION)
-            addFilter("Kuwahara", FilterType.KUWAHARA)
-            addFilter("RGB Dilation", FilterType.RGB_DILATION)
-            addFilter("Sketch", FilterType.SKETCH)
-            addFilter("Toon", FilterType.TOON)
-            addFilter("Smooth Toon", FilterType.SMOOTH_TOON)
-            addFilter("Halftone", FilterType.HALFTONE)
-
-            addFilter("Bulge Distortion", FilterType.BULGE_DISTORTION)
-            addFilter("Glass Sphere", FilterType.GLASS_SPHERE)
-            addFilter("Haze", FilterType.HAZE)
-            addFilter("Laplacian", FilterType.LAPLACIAN)
-            addFilter("Non Maximum Suppression", FilterType.NON_MAXIMUM_SUPPRESSION)
-            addFilter("Sphere Refraction", FilterType.SPHERE_REFRACTION)
-            addFilter("Swirl", FilterType.SWIRL)
-            addFilter("Weak Pixel Inclusion", FilterType.WEAK_PIXEL_INCLUSION)
-            addFilter("False Color", FilterType.FALSE_COLOR)
-
-            addFilter("Color Balance", FilterType.COLOR_BALANCE)
-
-            addFilter("Levels Min (Mid Adjust)", FilterType.LEVELS_FILTER_MIN)
-
-            addFilter("Bilateral Blur", FilterType.BILATERAL_BLUR)
-
-            addFilter("Zoom Blur", FilterType.ZOOM_BLUR)
-
-            addFilter("Transform (2-D)", FilterType.TRANSFORM2D)
-
-            addFilter("Solarize", FilterType.SOLARIZE)
-
-            addFilter("Vibrance", FilterType.VIBRANCE)
-        }
 
         val builder = AlertDialog.Builder(context)
         builder.setTitle("Choose a filter")
-        builder.setItems(filters.names.toTypedArray()) { _, item ->
-            listener(createFilterForType(context, filters.filters[item]))
+        builder.setItems(filterList.names.toTypedArray()) { _, item ->
+            listener(createFilterForType(context, filterList.filters[item]))
         }
         builder.create().show()
     }
 
-    private fun createFilterForType(context: Context, type: FilterType): GPUImageFilter {
+    fun createFilterForType(context: Context, type: FilterType): GPUImageFilter {
         return when (type) {
             FilterType.CONTRAST -> GPUImageContrastFilter(2.0f)
             FilterType.GAMMA -> GPUImageGammaFilter(2.0f)
@@ -154,56 +157,68 @@ object GPUImageFilterTools {
                     GPUImageGrayscaleFilter()
                 )
             )
+
             FilterType.SATURATION -> GPUImageSaturationFilter(1.0f)
             FilterType.EXPOSURE -> GPUImageExposureFilter(0.0f)
             FilterType.HIGHLIGHT_SHADOW -> GPUImageHighlightShadowFilter(
                 0.0f,
                 1.0f
             )
+
             FilterType.MONOCHROME -> GPUImageMonochromeFilter(
                 1.0f, floatArrayOf(0.6f, 0.45f, 0.3f, 1.0f)
             )
+
             FilterType.OPACITY -> GPUImageOpacityFilter(1.0f)
             FilterType.RGB -> GPUImageRGBFilter(1.0f, 1.0f, 1.0f)
             FilterType.WHITE_BALANCE -> GPUImageWhiteBalanceFilter(
                 5000.0f,
                 0.0f
             )
+
             FilterType.VIGNETTE -> GPUImageVignetteFilter(
                 PointF(0.5f, 0.5f),
                 floatArrayOf(0.0f, 0.0f, 0.0f),
                 0.3f,
                 0.75f
             )
+
             FilterType.TONE_CURVE -> GPUImageToneCurveFilter().apply {
                 setFromCurveFileInputStream(context.resources.openRawResource(R.raw.tone_cuver_sample))
             }
+
             FilterType.LUMINANCE -> GPUImageLuminanceFilter()
             FilterType.LUMINANCE_THRESHSOLD -> GPUImageLuminanceThresholdFilter(0.5f)
             FilterType.BLEND_DIFFERENCE -> createBlendFilter(
                 context,
                 GPUImageDifferenceBlendFilter::class.java
             )
+
             FilterType.BLEND_SOURCE_OVER -> createBlendFilter(
                 context,
                 GPUImageSourceOverBlendFilter::class.java
             )
+
             FilterType.BLEND_COLOR_BURN -> createBlendFilter(
                 context,
                 GPUImageColorBurnBlendFilter::class.java
             )
+
             FilterType.BLEND_COLOR_DODGE -> createBlendFilter(
                 context,
                 GPUImageColorDodgeBlendFilter::class.java
             )
+
             FilterType.BLEND_DARKEN -> createBlendFilter(
                 context,
                 GPUImageDarkenBlendFilter::class.java
             )
+
             FilterType.BLEND_DISSOLVE -> createBlendFilter(
                 context,
                 GPUImageDissolveBlendFilter::class.java
             )
+
             FilterType.BLEND_EXCLUSION -> createBlendFilter(
                 context,
                 GPUImageExclusionBlendFilter::class.java
@@ -213,66 +228,82 @@ object GPUImageFilterTools {
                 context,
                 GPUImageHardLightBlendFilter::class.java
             )
+
             FilterType.BLEND_LIGHTEN -> createBlendFilter(
                 context,
                 GPUImageLightenBlendFilter::class.java
             )
+
             FilterType.BLEND_ADD -> createBlendFilter(
                 context,
                 GPUImageAddBlendFilter::class.java
             )
+
             FilterType.BLEND_DIVIDE -> createBlendFilter(
                 context,
                 GPUImageDivideBlendFilter::class.java
             )
+
             FilterType.BLEND_MULTIPLY -> createBlendFilter(
                 context,
                 GPUImageMultiplyBlendFilter::class.java
             )
+
             FilterType.BLEND_OVERLAY -> createBlendFilter(
                 context,
                 GPUImageOverlayBlendFilter::class.java
             )
+
             FilterType.BLEND_SCREEN -> createBlendFilter(
                 context,
                 GPUImageScreenBlendFilter::class.java
             )
+
             FilterType.BLEND_ALPHA -> createBlendFilter(
                 context,
                 GPUImageAlphaBlendFilter::class.java
             )
+
             FilterType.BLEND_COLOR -> createBlendFilter(
                 context,
                 GPUImageColorBlendFilter::class.java
             )
+
             FilterType.BLEND_HUE -> createBlendFilter(
                 context,
                 GPUImageHueBlendFilter::class.java
             )
+
             FilterType.BLEND_SATURATION -> createBlendFilter(
                 context,
                 GPUImageSaturationBlendFilter::class.java
             )
+
             FilterType.BLEND_LUMINOSITY -> createBlendFilter(
                 context,
                 GPUImageLuminosityBlendFilter::class.java
             )
+
             FilterType.BLEND_LINEAR_BURN -> createBlendFilter(
                 context,
                 GPUImageLinearBurnBlendFilter::class.java
             )
+
             FilterType.BLEND_SOFT_LIGHT -> createBlendFilter(
                 context,
                 GPUImageSoftLightBlendFilter::class.java
             )
+
             FilterType.BLEND_SUBTRACT -> createBlendFilter(
                 context,
                 GPUImageSubtractBlendFilter::class.java
             )
+
             FilterType.BLEND_CHROMA_KEY -> createBlendFilter(
                 context,
                 GPUImageChromaKeyBlendFilter::class.java
             )
+
             FilterType.BLEND_NORMAL -> createBlendFilter(
                 context,
                 GPUImageNormalBlendFilter::class.java
@@ -281,6 +312,7 @@ object GPUImageFilterTools {
             FilterType.LOOKUP_AMATORKA -> GPUImageLookupFilter().apply {
                 bitmap = BitmapFactory.decodeResource(context.resources, R.drawable.lookup_amatorka)
             }
+
             FilterType.GAUSSIAN_BLUR -> GPUImageGaussianBlurFilter()
             FilterType.CROSSHATCH -> GPUImageCrosshatchFilter()
             FilterType.BOX_BLUR -> GPUImageBoxBlurFilter()
@@ -311,9 +343,9 @@ object GPUImageFilterTools {
         }
     }
 
-    private fun createBlendFilter(
+    fun createBlendFilter(
         context: Context,
-        filterClass: Class<out GPUImageTwoInputFilter>
+        filterClass: Class<out GPUImageTwoInputFilter>,
     ): GPUImageFilter {
         return try {
             filterClass.newInstance().apply {
@@ -325,7 +357,7 @@ object GPUImageFilterTools {
         }
     }
 
-    private enum class FilterType {
+    enum class FilterType {
         CONTRAST, GRAYSCALE, SHARPEN, SEPIA, SOBEL_EDGE_DETECTION, THRESHOLD_EDGE_DETECTION, THREE_X_THREE_CONVOLUTION, FILTER_GROUP, EMBOSS, POSTERIZE, GAMMA, BRIGHTNESS, INVERT, HUE, PIXELATION,
         SATURATION, EXPOSURE, HIGHLIGHT_SHADOW, MONOCHROME, OPACITY, RGB, WHITE_BALANCE, VIGNETTE, TONE_CURVE, LUMINANCE, LUMINANCE_THRESHSOLD, BLEND_COLOR_BURN, BLEND_COLOR_DODGE, BLEND_DARKEN,
         BLEND_DIFFERENCE, BLEND_DISSOLVE, BLEND_EXCLUSION, BLEND_SOURCE_OVER, BLEND_HARD_LIGHT, BLEND_LIGHTEN, BLEND_ADD, BLEND_DIVIDE, BLEND_MULTIPLY, BLEND_OVERLAY, BLEND_SCREEN, BLEND_ALPHA,
@@ -334,7 +366,7 @@ object GPUImageFilterTools {
         SPHERE_REFRACTION, SWIRL, WEAK_PIXEL_INCLUSION, FALSE_COLOR, COLOR_BALANCE, LEVELS_FILTER_MIN, BILATERAL_BLUR, ZOOM_BLUR, HALFTONE, TRANSFORM2D, SOLARIZE, VIBRANCE
     }
 
-    private class FilterList {
+    class FilterRepo {
         val names: MutableList<String> = LinkedList()
         val filters: MutableList<FilterType> = LinkedList()
 
@@ -345,48 +377,44 @@ object GPUImageFilterTools {
     }
 
     class FilterAdjuster(filter: GPUImageFilter) {
-        private val adjuster: Adjuster<out GPUImageFilter>?
-
-        init {
-            adjuster = when (filter) {
-                is GPUImageSharpenFilter -> SharpnessAdjuster(filter)
-                is GPUImageSepiaToneFilter -> SepiaAdjuster(filter)
-                is GPUImageContrastFilter -> ContrastAdjuster(filter)
-                is GPUImageGammaFilter -> GammaAdjuster(filter)
-                is GPUImageBrightnessFilter -> BrightnessAdjuster(filter)
-                is GPUImageSobelEdgeDetectionFilter -> SobelAdjuster(filter)
-                is GPUImageThresholdEdgeDetectionFilter -> ThresholdAdjuster(filter)
-                is GPUImage3x3ConvolutionFilter -> ThreeXThreeConvolutionAjuster(filter)
-                is GPUImageEmbossFilter -> EmbossAdjuster(filter)
-                is GPUImage3x3TextureSamplingFilter -> GPU3x3TextureAdjuster(filter)
-                is GPUImageHueFilter -> HueAdjuster(filter)
-                is GPUImagePosterizeFilter -> PosterizeAdjuster(filter)
-                is GPUImagePixelationFilter -> PixelationAdjuster(filter)
-                is GPUImageSaturationFilter -> SaturationAdjuster(filter)
-                is GPUImageExposureFilter -> ExposureAdjuster(filter)
-                is GPUImageHighlightShadowFilter -> HighlightShadowAdjuster(filter)
-                is GPUImageMonochromeFilter -> MonochromeAdjuster(filter)
-                is GPUImageOpacityFilter -> OpacityAdjuster(filter)
-                is GPUImageRGBFilter -> RGBAdjuster(filter)
-                is GPUImageWhiteBalanceFilter -> WhiteBalanceAdjuster(filter)
-                is GPUImageVignetteFilter -> VignetteAdjuster(filter)
-                is GPUImageLuminanceThresholdFilter -> LuminanceThresholdAdjuster(filter)
-                is GPUImageDissolveBlendFilter -> DissolveBlendAdjuster(filter)
-                is GPUImageGaussianBlurFilter -> GaussianBlurAdjuster(filter)
-                is GPUImageCrosshatchFilter -> CrosshatchBlurAdjuster(filter)
-                is GPUImageBulgeDistortionFilter -> BulgeDistortionAdjuster(filter)
-                is GPUImageGlassSphereFilter -> GlassSphereAdjuster(filter)
-                is GPUImageHazeFilter -> HazeAdjuster(filter)
-                is GPUImageSphereRefractionFilter -> SphereRefractionAdjuster(filter)
-                is GPUImageSwirlFilter -> SwirlAdjuster(filter)
-                is GPUImageColorBalanceFilter -> ColorBalanceAdjuster(filter)
-                is GPUImageLevelsFilter -> LevelsMinMidAdjuster(filter)
-                is GPUImageBilateralBlurFilter -> BilateralAdjuster(filter)
-                is GPUImageTransformFilter -> RotateAdjuster(filter)
-                is GPUImageSolarizeFilter -> SolarizeAdjuster(filter)
-                is GPUImageVibranceFilter -> VibranceAdjuster(filter)
-                else -> null
-            }
+        private val adjuster: Adjuster<out GPUImageFilter>? = when (filter) {
+            is GPUImageSharpenFilter -> SharpnessAdjuster(filter)
+            is GPUImageSepiaToneFilter -> SepiaAdjuster(filter)
+            is GPUImageContrastFilter -> ContrastAdjuster(filter)
+            is GPUImageGammaFilter -> GammaAdjuster(filter)
+            is GPUImageBrightnessFilter -> BrightnessAdjuster(filter)
+            is GPUImageSobelEdgeDetectionFilter -> SobelAdjuster(filter)
+            is GPUImageThresholdEdgeDetectionFilter -> ThresholdAdjuster(filter)
+            is GPUImage3x3ConvolutionFilter -> ThreeXThreeConvolutionAjuster(filter)
+            is GPUImageEmbossFilter -> EmbossAdjuster(filter)
+            is GPUImage3x3TextureSamplingFilter -> GPU3x3TextureAdjuster(filter)
+            is GPUImageHueFilter -> HueAdjuster(filter)
+            is GPUImagePosterizeFilter -> PosterizeAdjuster(filter)
+            is GPUImagePixelationFilter -> PixelationAdjuster(filter)
+            is GPUImageSaturationFilter -> SaturationAdjuster(filter)
+            is GPUImageExposureFilter -> ExposureAdjuster(filter)
+            is GPUImageHighlightShadowFilter -> HighlightShadowAdjuster(filter)
+            is GPUImageMonochromeFilter -> MonochromeAdjuster(filter)
+            is GPUImageOpacityFilter -> OpacityAdjuster(filter)
+            is GPUImageRGBFilter -> RGBAdjuster(filter)
+            is GPUImageWhiteBalanceFilter -> WhiteBalanceAdjuster(filter)
+            is GPUImageVignetteFilter -> VignetteAdjuster(filter)
+            is GPUImageLuminanceThresholdFilter -> LuminanceThresholdAdjuster(filter)
+            is GPUImageDissolveBlendFilter -> DissolveBlendAdjuster(filter)
+            is GPUImageGaussianBlurFilter -> GaussianBlurAdjuster(filter)
+            is GPUImageCrosshatchFilter -> CrosshatchBlurAdjuster(filter)
+            is GPUImageBulgeDistortionFilter -> BulgeDistortionAdjuster(filter)
+            is GPUImageGlassSphereFilter -> GlassSphereAdjuster(filter)
+            is GPUImageHazeFilter -> HazeAdjuster(filter)
+            is GPUImageSphereRefractionFilter -> SphereRefractionAdjuster(filter)
+            is GPUImageSwirlFilter -> SwirlAdjuster(filter)
+            is GPUImageColorBalanceFilter -> ColorBalanceAdjuster(filter)
+            is GPUImageLevelsFilter -> LevelsMinMidAdjuster(filter)
+            is GPUImageBilateralBlurFilter -> BilateralAdjuster(filter)
+            is GPUImageTransformFilter -> RotateAdjuster(filter)
+            is GPUImageSolarizeFilter -> SolarizeAdjuster(filter)
+            is GPUImageVibranceFilter -> VibranceAdjuster(filter)
+            else -> null
         }
 
         fun canAdjust(): Boolean {

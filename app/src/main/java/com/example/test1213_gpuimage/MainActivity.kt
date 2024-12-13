@@ -24,6 +24,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.example.test1213_gpuimage.rv.FilterGalleryActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -44,6 +45,10 @@ class MainActivity : AppCompatActivity() {
             } else {
                 startActivity(Intent(this, CameraActivity::class.java))
             }
+        }
+
+        findViewById<View>(R.id.button_gallery_rv).setOnClickListener {
+            startActivity(Intent(this, FilterGalleryActivity::class.java))
         }
     }
 
