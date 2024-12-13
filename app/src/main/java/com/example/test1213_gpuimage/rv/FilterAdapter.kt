@@ -32,6 +32,7 @@ class FilterAdapter(
 
     init {
         gpuImage.setImage(originalBitmap)
+
     }
 
 
@@ -63,6 +64,7 @@ class FilterAdapter(
             holder.filterAdjustSeekBar.visibility = View.VISIBLE
             holder.filterAdjustSeekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
                 override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
+                    gpuImage.setFilter(filter)
                     adjuster.adjust(progress)
 
                    val bitmap =  gpuImage.getBitmapWithFilterApplied()

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "6558854b44268b7c773b77f4",
+    "thumbnail": "static.apero.vn/android-ai-artimind/thumbnail_banner/Neon_City.jpg",
+    "number": "1",
+    "type": "free"
+  },
+  {
+    "id": "6558854b44268b7c773b7754",
+    "thumbnail": "static.apero.vn/android-ai-artimind/thumbnail_banner/Dark_Elf.jpg",
+    "number": "2",
+    "type": "free"
+  },
+  {
+    "id": "6558854b44268b7c773b77dc",
+    "thumbnail": "static.apero.vn/android-ai-artimind/thumbnail_banner/Dragon_Warrior.jpg",
+    "number": "3",
+    "type": "premium"
+  },
+  {
+    "id": "6558854b44268b7c773b7770",
+    "thumbnail": "static.apero.vn/android-ai-artimind/thumbnail_banner/Spring.jpg",
+    "number": "4",
+    "type": "premium"
+  },
+  {
+    "id": "6558854b44268b7c773b75a8",
+    "thumbnail": "static.apero.vn/android-ai-artimind/thumbnail_banner/star_war_banner.jpg",
+    "number": "5",
+    "type": "free"
+  }
+]

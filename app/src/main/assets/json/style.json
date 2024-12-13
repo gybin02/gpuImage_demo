@@ -1,0 +1,759 @@
+[
+  {
+    "id": "trending_category_id",
+    "name": "Trending",
+    "styles": [
+      {
+        "id": "64ec5b5a0399acaae7825481",
+        "name": "Cartoonie",
+        "thumbnail": "static.apero.vn/android-ai-artimind/cartoonie.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/1022.cartoonie.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/cartoonie_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/cartoonie_after.jpg",
+        "category": [
+          "cartoon_category_id",
+          "anime_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64ec5b5a0399acaae7825480",
+        "name": "Fairy",
+        "thumbnail": "static.apero.vn/android-ai-artimind/fairy.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/1023.fairy.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/fairy_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/fairy_after.jpg",
+        "category": [
+          "digital_category_id"
+        ],
+        "type": "premium"
+      },
+      {
+        "id": "64ec5b5a0399acaae7825482",
+        "name": "Nature",
+        "thumbnail": "static.apero.vn/android-ai-artimind/nature.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/1024.nature.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/nature_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/nature_after.jpg",
+        "category": [
+          "digital_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64ec5b5a0399acaae7825483",
+        "name": "Cowboy",
+        "thumbnail": "static.apero.vn/android-ai-artimind/cowboy.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/1026.cowboy.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/cowboy_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/cowboy_after.jpg",
+        "category": [
+          "cartoon_category_id",
+          "anime_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64ec5b5a0399acaae7825484",
+        "name": "Vintage Pencil",
+        "thumbnail": "static.apero.vn/android-ai-artimind/vintage_pencil.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/1025.vintage_pencil.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/vintage_pencil_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/vintage_pencil_after.jpg",
+        "category": [
+          "painting_category_id"
+        ],
+        "type": "premium"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9bd",
+        "name": "Fantasy",
+        "thumbnail": "static.apero.vn/android-ai-artimind/fantasy.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_digital_fantasy.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/fantasy_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/fantasy_after.jpg",
+        "category": [
+          "digital_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9c5",
+        "name": "Mechanic",
+        "thumbnail": "static.apero.vn/android-ai-artimind/mechanic.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_digital_mechanic.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/mechanic_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/mechanic_after.jpg",
+        "category": [
+          "digital_category_id"
+        ],
+        "type": "premium"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9c0",
+        "name": "Manga",
+        "thumbnail": "static.apero.vn/android-ai-artimind/manga.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_anime_manga.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/manga_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/manga_after.jpg",
+        "category": [
+          "painting_category_id",
+          "anime_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9c9",
+        "name": "3D Art",
+        "thumbnail": "static.apero.vn/android-ai-artimind/3d_art.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_digital_3dart.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/3d_art_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/3d_art_after.jpg",
+        "category": [
+          "digital_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9b8",
+        "name": "Anime",
+        "thumbnail": "static.apero.vn/android-ai-artimind/anime.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_anime_anime.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/anime_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/anime_after.jpg",
+        "category": [
+          "cartoon_category_id",
+          "anime_category_id"
+        ],
+        "type": "premium"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9cb",
+        "name": "Oil Painting",
+        "thumbnail": "static.apero.vn/android-ai-artimind/oil_painting.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_painting_oilpainting.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/oil_painting_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/oil_painting_after.jpg",
+        "category": [
+          "painting_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9be",
+        "name": "Ghibi",
+        "thumbnail": "static.apero.vn/android-ai-artimind/ghibi.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_anime_cartoon_ghibi.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/ghibi_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/ghibi_after.jpg",
+        "category": [
+          "painting_category_id",
+          "anime_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9ca",
+        "name": "Star War",
+        "thumbnail": "static.apero.vn/android-ai-artimind/star_war.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_digital_starwar.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/star_war_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/star_war_after.jpg",
+        "category": [
+          "digital_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9bc",
+        "name": "Disney",
+        "thumbnail": "static.apero.vn/android-ai-artimind/disney.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_cartoon_disney.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/disney_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/disney_after.jpg",
+        "category": [
+          "cartoon_category_id"
+        ],
+        "type": "premium"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9c8",
+        "name": "Barbie",
+        "thumbnail": "static.apero.vn/android-ai-artimind/barbie.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_cartoon_barbie.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/barbie_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/barbie_after.jpg",
+        "category": [
+          "cartoon_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9bb",
+        "name": "Concept Art",
+        "thumbnail": "static.apero.vn/android-ai-artimind/concept_art.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_digital_conceptart.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/concept_art_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/concept_art_after.jpg",
+        "category": [
+          "digital_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9c3",
+        "name": "Game Graphic",
+        "thumbnail": "static.apero.vn/android-ai-artimind/20.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_digital_gamegraphic.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/game_graphic_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/game_graphic_after.jpg",
+        "category": [
+          "digital_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9c2",
+        "name": "Manhua",
+        "thumbnail": "static.apero.vn/android-ai-artimind/manhua.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_anime_manhua.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/manhua_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/manhua_after.jpg",
+        "category": [
+          "cartoon_category_id",
+          "anime_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9c7",
+        "name": "Water Color",
+        "thumbnail": "static.apero.vn/android-ai-artimind/water_color.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_painting_watercolor.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/water_color_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/water_color_after.jpg",
+        "category": [
+          "painting_category_id"
+        ],
+        "type": "premium"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9c1",
+        "name": "Knight",
+        "thumbnail": "static.apero.vn/android-ai-artimind/knight.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_digital_knight.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/knight_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/knight_after.jpg",
+        "category": [
+          "digital_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9ba",
+        "name": "Chinese",
+        "thumbnail": "static.apero.vn/android-ai-artimind/chinese_art.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_digital_chinese.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/chinese_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/chinese_after.jpg",
+        "category": [
+          "digital_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9c4",
+        "name": "Manhwa",
+        "thumbnail": "static.apero.vn/android-ai-artimind/manhwa.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_cartoon_anime_manhwa.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/manhwa_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/manhwa_after.jpg",
+        "category": [
+          "cartoon_category_id",
+          "anime_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9b7",
+        "name": "Concept",
+        "thumbnail": "static.apero.vn/android-ai-artimind/concept.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_digital_concept.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/concept_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/concept_after.jpg",
+        "category": [
+          "digital_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9c6",
+        "name": "Sketching",
+        "thumbnail": "static.apero.vn/android-ai-artimind/sketching.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_painting_sketching.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/sketching_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/sketching_after.jpg",
+        "category": [
+          "painting_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9bf",
+        "name": "Starry Light",
+        "thumbnail": "static.apero.vn/android-ai-artimind/starry_light.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_anime_starrylight.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/starry_light_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/starry_light_after.jpg",
+        "category": [
+          "anime_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9b9",
+        "name": "Chibi",
+        "thumbnail": "static.apero.vn/android-ai-artimind/chibi.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_cartoon_anime_chibi.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/chibi_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/chibi_after.jpg",
+        "category": [
+          "cartoon_category_id",
+          "anime_category_id"
+        ],
+        "type": "free"
+      }
+    ]
+  },
+  {
+    "id": "anime_category_id",
+    "name": "Anime",
+    "styles": [
+      {
+        "id": "64ec5b5a0399acaae7825483",
+        "name": "Cowboy",
+        "thumbnail": "static.apero.vn/android-ai-artimind/cowboy.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/1026.cowboy.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/cowboy_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/cowboy_after.jpg",
+        "category": [
+          "cartoon_category_id",
+          "anime_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64ec5b5a0399acaae7825481",
+        "name": "Cartoonie",
+        "thumbnail": "static.apero.vn/android-ai-artimind/cartoonie.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/1022.cartoonie.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/cartoonie_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/cartoonie_after.jpg",
+        "category": [
+          "cartoon_category_id",
+          "anime_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9b8",
+        "name": "Anime",
+        "thumbnail": "static.apero.vn/android-ai-artimind/anime.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_anime_anime.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/anime_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/anime_after.jpg",
+        "category": [
+          "anime_category_id"
+        ],
+        "type": "premium"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9c0",
+        "name": "Manga",
+        "thumbnail": "static.apero.vn/android-ai-artimind/manga.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_anime_manga.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/manga_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/manga_after.jpg",
+        "category": [
+          "painting_category_id",
+          "anime_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9c2",
+        "name": "Manhua",
+        "thumbnail": "static.apero.vn/android-ai-artimind/manhua.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_anime_manhua.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/manhua_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/manhua_after.jpg",
+        "category": [
+          "anime_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9be",
+        "name": "Ghibi",
+        "thumbnail": "static.apero.vn/android-ai-artimind/ghibi.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_anime_cartoon_ghibi.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/ghibi_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/ghibi_after.jpg",
+        "category": [
+          "anime_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9bf",
+        "name": "Starry Light",
+        "thumbnail": "static.apero.vn/android-ai-artimind/starry_light.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_anime_starrylight.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/starry_light_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/starry_light_after.jpg",
+        "category": [
+          "anime_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9b9",
+        "name": "Chibi",
+        "thumbnail": "static.apero.vn/android-ai-artimind/chibi.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_cartoon_anime_chibi.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/chibi_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/chibi_after.jpg",
+        "category": [
+          "cartoon_category_id",
+          "anime_category_id"
+        ],
+        "type": "free"
+      }
+    ]
+  },
+  {
+    "id": "digital_category_id",
+    "name": "Digital Art",
+    "styles": [
+      {
+        "id": "64ec5b5a0399acaae7825482",
+        "name": "Nature",
+        "thumbnail": "static.apero.vn/android-ai-artimind/nature.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/1024.nature.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/nature_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/nature_after.jpg",
+        "category": [
+          "digital_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64ec5b5a0399acaae7825480",
+        "name": "Fairy",
+        "thumbnail": "static.apero.vn/android-ai-artimind/fairy.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/1023.fairy.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/fairy_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/fairy_after.jpg",
+        "category": [
+          "digital_category_id"
+        ],
+        "type": "premium"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9c5",
+        "name": "Mechanic",
+        "thumbnail": "static.apero.vn/android-ai-artimind/mechanic.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_digital_mechanic.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/mechanic_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/mechanic_after.jpg",
+        "category": [
+          "digital_category_id"
+        ],
+        "type": "premium"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9bd",
+        "name": "Fantasy",
+        "thumbnail": "static.apero.vn/android-ai-artimind/fantasy.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_digital_fantasy.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/fantasy_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/fantasy_after.jpg",
+        "category": [
+          "digital_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9ca",
+        "name": "Star War",
+        "thumbnail": "static.apero.vn/android-ai-artimind/star_war.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_digital_starwar.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/star_war_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/star_war_after.jpg",
+        "category": [
+          "digital_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9c3",
+        "name": "Game Graphic",
+        "thumbnail": "static.apero.vn/android-ai-artimind/20.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_digital_gamegraphic.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/game_graphic_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/game_graphic_after.jpg",
+        "category": [
+          "digital_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9c9",
+        "name": "3D Art",
+        "thumbnail": "static.apero.vn/android-ai-artimind/3d_art.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_digital_3dart.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/3d_art_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/3d_art_after.jpg",
+        "category": [
+          "digital_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9c1",
+        "name": "Knight",
+        "thumbnail": "static.apero.vn/android-ai-artimind/knight.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_digital_knight.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/knight_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/knight_after.jpg",
+        "category": [
+          "digital_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9bb",
+        "name": "Concept Art",
+        "thumbnail": "static.apero.vn/android-ai-artimind/concept_art.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_digital_conceptart.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/concept_art_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/concept_art_after.jpg",
+        "category": [
+          "digital_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9ba",
+        "name": "Chinese",
+        "thumbnail": "static.apero.vn/android-ai-artimind/chinese_art.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_digital_chinese.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/chinese_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/chinese_after.jpg",
+        "category": [
+          "digital_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9b7",
+        "name": "Concept",
+        "thumbnail": "static.apero.vn/android-ai-artimind/concept.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_digital_concept.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/concept_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/concept_after.jpg",
+        "category": [
+          "digital_category_id"
+        ],
+        "type": "free"
+      }
+    ]
+  },
+  {
+    "id": "cartoon_category_id",
+    "name": "Cartoon",
+    "styles": [
+      {
+        "id": "64ec5b5a0399acaae7825481",
+        "name": "Cartoonie",
+        "thumbnail": "static.apero.vn/android-ai-artimind/cartoonie.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/1022.cartoonie.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/cartoonie_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/cartoonie_after.jpg",
+        "category": [
+          "cartoon_category_id",
+          "anime_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64ec5b5a0399acaae7825483",
+        "name": "Cowboy",
+        "thumbnail": "static.apero.vn/android-ai-artimind/cowboy.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/1026.cowboy.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/cowboy_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/cowboy_after.jpg",
+        "category": [
+          "cartoon_category_id",
+          "anime_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9bc",
+        "name": "Disney",
+        "thumbnail": "static.apero.vn/android-ai-artimind/disney.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_cartoon_disney.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/disney_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/disney_after.jpg",
+        "category": [
+          "cartoon_category_id"
+        ],
+        "type": "premium"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9c8",
+        "name": "Barbie",
+        "thumbnail": "static.apero.vn/android-ai-artimind/barbie.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_cartoon_barbie.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/barbie_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/barbie_after.jpg",
+        "category": [
+          "cartoon_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9c2",
+        "name": "Manhua",
+        "thumbnail": "static.apero.vn/android-ai-artimind/manhua.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_anime_manhua.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/manhua_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/manhua_after.jpg",
+        "category": [
+          "cartoon_category_id",
+          "anime_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9be",
+        "name": "Ghibi",
+        "thumbnail": "static.apero.vn/android-ai-artimind/ghibi.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_anime_cartoon_ghibi.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/ghibi_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/ghibi_after.jpg",
+        "category": [
+          "cartoon_category_id",
+          "anime_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9c4",
+        "name": "Manhwa",
+        "thumbnail": "static.apero.vn/android-ai-artimind/manhwa.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_cartoon_anime_manhwa.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/manhwa_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/manhwa_after.jpg",
+        "category": [
+          "cartoon_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9b9",
+        "name": "Chibi",
+        "thumbnail": "static.apero.vn/android-ai-artimind/chibi.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_cartoon_anime_chibi.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/chibi_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/chibi_after.jpg",
+        "category": [
+          "cartoon_category_id",
+          "anime_category_id"
+        ],
+        "type": "free"
+      }
+    ]
+  },
+  {
+    "id": "painting_category_id",
+    "name": "Painting",
+    "styles": [
+      {
+        "id": "64ec5b5a0399acaae7825484",
+        "name": "Vintage Pencil",
+        "thumbnail": "static.apero.vn/android-ai-artimind/vintage_pencil.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/1025.vintage_pencil.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/vintage_pencil_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/vintage_pencil_after.jpg",
+        "category": [
+          "painting_category_id"
+        ],
+        "type": "premium"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9c7",
+        "name": "Water Color",
+        "thumbnail": "static.apero.vn/android-ai-artimind/water_color.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_painting_watercolor.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/water_color_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/water_color_after.jpg",
+        "category": [
+          "painting_category_id"
+        ],
+        "type": "premium"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9cb",
+        "name": "Oil Painting",
+        "thumbnail": "static.apero.vn/android-ai-artimind/oil_painting.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_painting_oilpainting.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/oil_painting_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/oil_painting_after.jpg",
+        "category": [
+          "painting_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9c6",
+        "name": "Sketching",
+        "thumbnail": "static.apero.vn/android-ai-artimind/sketching.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_painting_sketching.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/sketching_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/sketching_after.jpg",
+        "category": [
+          "painting_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9c0",
+        "name": "Manga",
+        "thumbnail": "static.apero.vn/android-ai-artimind/manga.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_anime_manga.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/manga_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/manga_after.jpg",
+        "category": [
+          "painting_category_id",
+          "anime_category_id"
+        ],
+        "type": "free"
+      },
+      {
+        "id": "64b260c21d50d66f545ea9be",
+        "name": "Ghibi",
+        "thumbnail": "static.apero.vn/android-ai-artimind/ghibi.gif",
+        "thumbnail_image": "static.apero.vn/android-ai-artimind/artimind_anime_cartoon_ghibi.png",
+        "thumbnail_before": "static.apero.vn/android-ai-artimind/ghibi_before.jpg",
+        "thumbnail_after": "static.apero.vn/android-ai-artimind/ghibi_after.jpg",
+        "category": [
+          "painting_category_id",
+          "anime_category_id"
+        ],
+        "type": "free"
+      }
+    ]
+  }
+]

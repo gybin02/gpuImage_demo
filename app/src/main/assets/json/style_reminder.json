@@ -1,0 +1,14 @@
+[
+  {
+    "id": "65155927572cf99454134e04",
+    "name": "Pirate",
+    "thumbnail_before": "static.apero.vn/android-ai-artimind/new_style_thumbnail/Pirates_Before.jpg",
+    "thumbnail_after": "static.apero.vn/android-ai-artimind/new_style_thumbnail/Pirates_After.jpg"
+  },
+  {
+    "id": "651a6b45572cf9945424ca2b",
+    "name": "Harlequin",
+    "thumbnail_before": "static.apero.vn/android-ai-artimind/new_style_thumbnail/Harlequin_Before.jpg",
+    "thumbnail_after": "static.apero.vn/android-ai-artimind/new_style_thumbnail/Harlequin_After.jpg"
+  }
+]

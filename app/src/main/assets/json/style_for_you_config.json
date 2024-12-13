@@ -1,0 +1,72 @@
+[
+  {
+    "id": "6558854b44268b7c773b76b2",
+    "name": "Seafarer Samson",
+    "thumbnail_before": "static.apero.vn/android-ai-artimind/thumnail_fashion_single/Jack_Sparrow_Before.jpg",
+    "thumbnail_after": "static.apero.vn/android-ai-artimind/thumnail_fashion_single/Jack_Sparrow_After.jpg",
+    "type": "free"
+  },
+  {
+    "id": "6558854b44268b7c773b75b0",
+    "name": "Digitron",
+    "thumbnail_before": "static.apero.vn/android-ai-artimind/new_style_thumbnail/Cyberpunk_Before.jpg",
+    "thumbnail_after": "static.apero.vn/android-ai-artimind/new_style_thumbnail/Cyberpunk_After.jpg",
+    "type": "premium"
+  },
+  {
+    "id": "6558854b44268b7c773b7564",
+    "name": "Chibi",
+    "thumbnail_before": "static.apero.vn/android-ai-artimind/new_style_thumbnail/Chibi_Before.jpg",
+    "thumbnail_after": "static.apero.vn/android-ai-artimind/new_style_thumbnail/Chibi_After.jpg",
+    "type": "free"
+  },
+  {
+    "id": "6558854b44268b7c773b764d",
+    "name": "Harlequin",
+    "thumbnail_before": "static.apero.vn/android-ai-artimind/thumnail_fashion_single/Harlequin_Before.jpg",
+    "thumbnail_after": "static.apero.vn/android-ai-artimind/thumnail_fashion_single/Harlequin_After.jpg",
+    "type": "free"
+  },
+  {
+    "id": "6558854b44268b7c773b769a",
+    "name": "Fairy",
+    "thumbnail_before": "static.apero.vn/android-ai-artimind/thumnail_fashion_single/Fairy_Before.jpg",
+    "thumbnail_after": "static.apero.vn/android-ai-artimind/thumnail_fashion_single/Fairy_After.jpg",
+    "type": "premium"
+  },
+  {
+    "id": "6558854b44268b7c773b769e",
+    "name": "Enchanted",
+    "thumbnail_before": "static.apero.vn/android-ai-artimind/thumnail_fashion_single/Enchanted_Before.jpg",
+    "thumbnail_after": "static.apero.vn/android-ai-artimind/thumnail_fashion_single/Enchanted_After.jpg",
+    "type": "free"
+  },
+  {
+    "id": "6558854b44268b7c773b76a2",
+    "name": "Gothic",
+    "thumbnail_before": "static.apero.vn/android-ai-artimind/thumnail_fashion_single/Gothic_Before.jpg",
+    "thumbnail_after": "static.apero.vn/android-ai-artimind/thumnail_fashion_single/Gothic_After.jpg",
+    "type": "premium"
+  },
+  {
+    "id": "6558854b44268b7c773b763e",
+    "name": "Nature",
+    "thumbnail_before": "static.apero.vn/android-ai-artimind/nature_before.jpg",
+    "thumbnail_after": "static.apero.vn/android-ai-artimind/nature_after.jpg",
+    "type": "free"
+  },
+  {
+    "id": "6558854b44268b7c773b75fd",
+    "name": "Solar Sentinel",
+    "thumbnail_before": "static.apero.vn/android-ai-artimind/new_style_thumbnail/Solar_Sentinel_Before.jpg",
+    "thumbnail_after": "static.apero.vn/android-ai-artimind/new_style_thumbnail/Solar_Sentinel_After.jpg",
+    "type": "free"
+  },
+  {
+    "id": "6558854b44268b7c773b75a8",
+    "name": "Star War",
+    "thumbnail_before": "static.apero.vn/android-ai-artimind/star_war_before.jpg",
+    "thumbnail_after": "static.apero.vn/android-ai-artimind/star_war_after.jpg",
+    "type": "free"
+  }
+]

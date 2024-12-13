@@ -1,0 +1,268 @@
+[
+  {
+    "dayOfWeek": "Monday",
+    "content": [
+      {
+        "time": {
+          "hour": "9",
+          "minute": "30"
+        },
+        "reminder": {
+          "title": "Damn it Monday!!",
+          "description": "Beat the Monday blues with AI art! Create something beautiful today"
+        },
+        "notification": "New entertaining style"
+      },
+      {
+        "time": {
+          "hour": "12",
+          "minute": "30"
+        },
+        "reminder": {
+          "title": "Bored at work?",
+          "description": "Spice things up by creating AI art with our app"
+        },
+        "notification": "Still in blue? Try this out!"
+      },
+      {
+        "time": {
+          "hour": "19",
+          "minute": "30"
+        },
+        "reminder": {
+          "title": "Need a pick-me-up?",
+          "description": "Just enter a few words and let the magic happen"
+        },
+        "notification": "Escape the Monday grind with this!"
+      }
+    ]
+  },
+  {
+    "dayOfWeek": "Tuesday",
+    "content": [
+      {
+        "time": {
+          "hour": "9",
+          "minute": "30"
+        },
+        "reminder": {
+          "title": "It's Tuesday AI challenge!!",
+          "description": "Let's see who gets the most marvelous image with AI style"
+        },
+        "notification": "New challange! create AI art"
+      },
+      {
+        "time": {
+          "hour": "12",
+          "minute": "30"
+        },
+        "reminder": {
+          "title": "Can't decide what to do on your Tuesday?",
+          "description": "Let's fun and easy way to relax and express yourself."
+        },
+        "notification": "What will you create today?"
+      },
+      {
+        "time": {
+          "hour": "19",
+          "minute": "30"
+        },
+        "reminder": {
+          "title": "Have you gotten your AI post yet?",
+          "description": "Share your art with us and get featured on our social media!"
+        },
+        "notification": "This style is very hot on social networks"
+      }
+    ]
+  },
+  {
+    "dayOfWeek": "Wednesday",
+    "content": [
+      {
+        "time": {
+          "hour": "9",
+          "minute": "30"
+        },
+        "reminder": {
+          "title": "These are for you",
+          "description": "Get inspired by our latest AI art collection. Tap to see more"
+        },
+        "notification": "Fresh start with AI style"
+      },
+      {
+        "time": {
+          "hour": "12",
+          "minute": "30"
+        },
+        "reminder": {
+          "title": "Free art just for now",
+          "description": "This AI art style is free just for you. Just for today!"
+        },
+        "notification": "This style is free for you"
+      },
+      {
+        "time": {
+          "hour": "19",
+          "minute": "30"
+        },
+        "reminder": {
+          "title": "Have you tried this style yet?",
+          "description": "It's a great way to relax and have some fun with AI images"
+        },
+        "notification": "Confidently express yourself with AI Art"
+      }
+    ]
+  },
+  {
+    "dayOfWeek": "Thursday",
+    "content": [
+      {
+        "time": {
+          "hour": "9",
+          "minute": "30"
+        },
+        "reminder": {
+          "title": "It's Thursday!",
+          "description": "It's time to get creative with AI art. I prepared a new style for you today."
+        },
+        "notification": "Let AI Art help you feel inspired"
+      },
+      {
+        "time": {
+          "hour": "12",
+          "minute": "30"
+        },
+        "reminder": {
+          "title": "You won't want to miss this",
+          "description": "We're always adding new styles to our app! Stay tuned for more updates."
+        },
+        "notification": "Take a moment to relax with AI art"
+      },
+      {
+        "time": {
+          "hour": "19",
+          "minute": "30"
+        },
+        "reminder": {
+          "title": "Feeling inspired?",
+          "description": "Use our AI art generator to create something beautiful."
+        },
+        "notification": "Make your dinner something special"
+      }
+    ]
+  },
+  {
+    "dayOfWeek": "Friday",
+    "content": [
+      {
+        "time": {
+          "hour": "9",
+          "minute": "30"
+        },
+        "reminder": {
+          "title": "Finally! it's Friday!",
+          "description": "The weekend is almost here! use our app to create something special?"
+        },
+        "notification": "Create beautiful thing with AI Art"
+      },
+      {
+        "time": {
+          "hour": "12",
+          "minute": "30"
+        },
+        "reminder": {
+          "title": "It's almost there",
+          "description": "Looking for a new way to express your happiness? Try our AI art tool."
+        },
+        "notification": "Make your lunch break more enjoyable"
+      },
+      {
+        "time": {
+          "hour": "19",
+          "minute": "30"
+        },
+        "reminder": {
+          "title": "Here's a fun challenge for you",
+          "description": "Use our AI tool to create a self-portrait in a different art style"
+        },
+        "notification": "Let's create an appealing AI dinner art"
+      }
+    ]
+  },
+  {
+    "dayOfWeek": "Saturday",
+    "content": [
+      {
+        "time": {
+          "hour": "9",
+          "minute": "30"
+        },
+        "reminder": {
+          "title": "Looking for a creative outlet?",
+          "description": "Try out our AI art generator and let your imagination run wild."
+        },
+        "notification": "Let your creativity flow with AI Art"
+      },
+      {
+        "time": {
+          "hour": "12",
+          "minute": "30"
+        },
+        "reminder": {
+          "title": "Generate fascinating party posts",
+          "description": "If you want an energetic image, this style is for you"
+        },
+        "notification": "Nice AI post for a delicious lunch"
+      },
+      {
+        "time": {
+          "hour": "19",
+          "minute": "30"
+        },
+        "reminder": {
+          "title": "Let's create your AI family photo",
+          "description": "We find this style matches your family vibe. Try and share it"
+        },
+        "notification": "Let's make AI festive atmosphere photos"
+      }
+    ]
+  },
+  {
+    "dayOfWeek": "Sunday",
+    "content": [
+      {
+        "time": {
+          "hour": "9",
+          "minute": "00"
+        },
+        "reminder": {
+          "title": "Looking for a new way to start your day?",
+          "description": "Why not try out our AI art generator and see what you can create?"
+        },
+        "notification": "Wake up to a masterpiece with AI Art"
+      },
+      {
+        "time": {
+          "hour": "12",
+          "minute": "30"
+        },
+        "reminder": {
+          "title": "Your friend may like an AI gift",
+          "description": "Try to custom AI Art gifts for your lovers"
+        },
+        "notification": "How about AI Art?"
+      },
+      {
+        "time": {
+          "hour": "19",
+          "minute": "30"
+        },
+        "reminder": {
+          "title": "How was the whole week?",
+          "description": "Make this week memories look futuristic"
+        },
+        "notification": "Show others your AI delicious meals"
+      }
+    ]
+  }
+]

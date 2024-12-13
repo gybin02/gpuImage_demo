@@ -1,0 +1,20 @@
+[
+  {
+    "id": "64b260c21d50d66f545ea9bd",
+    "thumbnail": "static.apero.vn/android-ai-artimind/thumbnail_banner/fantasy_banner.jpg",
+    "number": "1",
+    "type": "premium"
+  },
+  {
+    "id": "64b260c21d50d66f545ea9c5",
+    "thumbnail": "static.apero.vn/android-ai-artimind/thumbnail_banner/mechanic_banner.jpg",
+    "number": "2",
+    "type": "premium"
+  },
+  {
+    "id": "64b260c21d50d66f545ea9ca",
+    "thumbnail": "static.apero.vn/android-ai-artimind/thumbnail_banner/star_war_banner.jpg",
+    "number": "3",
+    "type": "free"
+  }
+]

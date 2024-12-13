@@ -1,0 +1,26 @@
+[
+  {
+    "id": "6558856da5f7c4e9ba4cfa43",
+    "thumbnail": "static.apero.vn/android-ai-artimind/thumbnail_banner/Fantasy.jpg",
+    "number": "1",
+    "type": "free"
+  },
+  {
+    "id": "6558856da5f7c4e9ba4cfaf5",
+    "thumbnail": "static.apero.vn/android-ai-artimind/thumbnail_banner/Asgardian.jpg",
+    "number": "2",
+    "type": "free"
+  },
+  {
+    "id": "6558856da5f7c4e9ba4cf939",
+    "thumbnail": "static.apero.vn/android-ai-artimind/thumbnail_banner/mechanic_banner.jpg",
+    "number": "3",
+    "type": "premium"
+  },
+  {
+    "id": "653a1c3dce0d8af18b421bf0",
+    "thumbnail": "static.apero.vn/android-ai-artimind/thumbnail_banner/star_war_banner.jpg",
+    "number": "4",
+    "type": "free"
+  }
+]
