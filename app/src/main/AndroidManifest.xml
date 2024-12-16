@@ -44,6 +44,7 @@
         <activity android:name=".rv.FilterGalleryActivity"/>
         <activity android:name="com.example.test1213_gpuimage.TestGlTranslateActivity" />
         <activity android:name="com.example.test1213_gpuimage.TestGpuGlslActivity" />
+        <activity android:name="com.example.test1213_gpuimage.TransitionActivity" />
     </application>
 
 </manifest>

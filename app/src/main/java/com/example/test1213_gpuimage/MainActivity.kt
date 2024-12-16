@@ -56,7 +56,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         findViewById<View>(R.id.button_gpu_gl_translate).setOnClickListener {
-            startActivity(Intent(this, TestGpuGlslActivity::class.java))
+//            startActivity(Intent(this, TestGpuGlslActivity::class.java))
+            startActivity(Intent(this, TransitionActivity::class.java))
 
         }
 
