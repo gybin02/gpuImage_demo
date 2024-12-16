@@ -50,6 +50,12 @@ class MainActivity : AppCompatActivity() {
         findViewById<View>(R.id.button_gallery_rv).setOnClickListener {
             startActivity(Intent(this, FilterGalleryActivity::class.java))
         }
+        findViewById<View>(R.id.button_gl_translate).setOnClickListener {
+            startActivity(Intent(this, TestGlTranslateActivity::class.java))
+
+        }
+
+
     }
 
     override fun onRequestPermissionsResult(

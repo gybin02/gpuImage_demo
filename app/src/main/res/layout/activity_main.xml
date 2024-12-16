@@ -35,6 +35,15 @@
             android:drawableTop="@android:drawable/ic_menu_gallery"
             android:text="Gallery All"
             tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/button_gl_translate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:drawableTop="@android:drawable/ic_menu_gallery"
+            android:text="测试 Gl-translation"
+            tools:ignore="HardcodedText" />
     </LinearLayout>
 
 </FrameLayout>
