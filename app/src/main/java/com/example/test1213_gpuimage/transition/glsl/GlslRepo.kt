@@ -3,8 +3,8 @@ package com.example.test1213_gpuimage.transition.glsl
 import android.content.Context
 
 object GlslRepo {
-    //Fragment 框架着色器
-    val fragmentShader = """
+    //Fragment 过渡动画着色器
+    val transitionFragmentShader = """
         precision highp float;
 
         uniform vec2 uResolution;
@@ -183,7 +183,7 @@ data class ShaderFile(
     fun getFragmentShader(context: Context): String {
         if (content.isEmpty()) {
             val shaderContent = GlslRepo.loadShaderFromAssets(context, this)
-            content = GlslRepo.fragmentShader
+            content = GlslRepo.transitionFragmentShader
                 .replace(
                     "vec4 transition(vec2 uv);",
                     shaderContent

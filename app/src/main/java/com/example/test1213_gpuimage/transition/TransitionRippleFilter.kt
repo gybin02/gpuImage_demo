@@ -8,7 +8,7 @@ import jp.co.cyberagent.android.gpuimage.filter.GPUImageTwoInputFilter
 class TransitionRippleFilter : GPUImageTwoInputFilter(fragmentShader) {
     companion object{
 
-        val fragmentShader = GlslRepo.fragmentShader
+        val fragmentShader = GlslRepo.transitionFragmentShader
             .replace(
                 "vec4 transition(vec2 uv);",
                 GlslRepo.ripple

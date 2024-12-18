@@ -1,4 +1,4 @@
-package com.example.test1213_gpuimage.transition
+package com.example.test1213_gpuimage.effect
 
 import android.animation.ValueAnimator
 import android.content.Context
@@ -20,12 +20,12 @@ import jp.co.cyberagent.android.gpuimage.GPUImageView
  * @param fromBitmap 图片1
  * @param toBitmap 图片2
  */
-class FilterTransitionAdapter(
+class EffectFilterAdapter(
     private val fromBitmap: Bitmap,
     private val toBitmap: Bitmap,
     private val context: Context,
     val shaderPath: String,
-) : RecyclerView.Adapter<FilterTransitionAdapter.FilterViewHolder>() {
+) : RecyclerView.Adapter<EffectFilterAdapter.FilterViewHolder>() {
 
     class FilterViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val filterNameTextView: TextView = itemView.findViewById(R.id.filterNameTextView)
@@ -48,10 +48,10 @@ class FilterTransitionAdapter(
         //居中下
         imageView.setScaleType(GPUImage.ScaleType.CENTER_INSIDE)
         imageView.setImage(fromBitmap)
-        val fragmentShader = shaderFile.getFragmentShader(context)
+        val fragmentShader = EffectGlslRepo.getFragmentShader(context,shaderFile)
 //        测试图片 gl_动画变化
-        val transitionFilter = TransitionBaseFilter(fragmentShader)
-        transitionFilter.bitmap = toBitmap
+        val transitionFilter = EffectBaseFilter(fragmentShader)
+//        transitionFilter.setUTime(System.currentTimeMillis().toFloat())
         imageView.setFilter(transitionFilter)
 
 
@@ -64,31 +64,7 @@ class FilterTransitionAdapter(
 //        transitionFilter.bitmap = toBitmap
 //        gpuImage.setFilter(transitionFilter)
 
-        // 动态更新过渡进度
-        val animator = ValueAnimator.ofFloat(0f, 1f).apply {
-            duration = 2000
-            repeatCount = ValueAnimator.INFINITE
-            repeatMode = ValueAnimator.REVERSE
-            //线性
-            interpolator = android.view.animation.AccelerateDecelerateInterpolator()
-            addUpdateListener { animation ->
-                val progress = animation.animatedValue as Float
-                //测试图片 gl_动画变化
-                transitionFilter.setProgress(progress)
-
-                //测试 progress 转为alpha，生成新的图片，刷新到ImageView
-//                val newBitmap = alphaBitmap(toBitmap,progress)
-                //测试 GPUImageDissolveBlendFilter变化
-//                transitionFilter.setMix(progress)
-                imageView.requestRender() // 渲染
-////                //生成新图片
-//                val newBitmap = gpuImage.getBitmapWithFilterApplied()
-//                imageView.setImageBitmap(newBitmap)
-
-//                 gpuImage.requestRender()
-            }
-        }
-        animator.start()
+//        imageView.requestRender() // 渲染
     }
 
     fun alphaBitmap(fromBitmap: Bitmap, progress: Float): Bitmap {
@@ -101,14 +77,14 @@ class FilterTransitionAdapter(
         return newBitmap
     }
 
-    override fun getItemCount() = getShaderList().size
+    override fun getItemCount() = GlslRepo.basicList.size
 
     protected fun range(percentage: Int, start: Float, end: Float): Float {
         return (end - start) * percentage / 100.0f + start
     }
 
     fun getShaderList(): List<ShaderFile> {
-        return GlslRepo.getShaderList(shaderPath)
+        return EffectGlslRepo.getShaderList(shaderPath)
     }
 
 //    fun pixFilterTest() {

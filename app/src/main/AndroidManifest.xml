@@ -48,6 +48,7 @@
         <activity android:name="com.example.test1213_gpuimage.transition.TransitionRvActivity" />
         <activity android:name="com.example.test1213_gpuimage.TransitionActivity" />
         <activity android:name="com.example.test1213_gpuimage.TransitionUseImageViewActivity" />
+        <activity android:name="com.example.test1213_gpuimage.effect.EffectRvActivity" />
     </application>
 
 </manifest>

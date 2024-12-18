@@ -26,6 +26,7 @@ import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.example.test1213_gpuimage.effect.EffectRvActivity
 import com.example.test1213_gpuimage.rv.FilterGalleryActivity
 import com.example.test1213_gpuimage.transition.TransitionRvActivity
 
@@ -82,6 +83,18 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        //图片效果
+        Button(this).apply {
+            text = "自定义filter 图片效果测试"
+            linearLayout.addView(this)
+            setOnClickListener {
+                val intent = Intent(this@MainActivity, EffectRvActivity::class.java)
+//                "mix" -> mixList
+//                "transform" -> transformList
+                intent.putExtra(TransitionRvActivity.KEY_SHADER_PATH,"mix")
+                startActivity(intent)
+            }
+        }
 
     }
 
