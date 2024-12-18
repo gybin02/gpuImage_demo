@@ -32,7 +32,7 @@ import jp.co.cyberagent.android.gpuimage.sample.utils.Camera2Loader
 import jp.co.cyberagent.android.gpuimage.sample.utils.CameraLoader
 import jp.co.cyberagent.android.gpuimage.sample.utils.doOnLayout
 import jp.co.cyberagent.android.gpuimage.util.Rotation
-
+//相机 测试
 class CameraActivity : AppCompatActivity() {
 
     private val gpuImageView: GPUImageView by lazy { findViewById<GPUImageView>(R.id.surfaceView) }

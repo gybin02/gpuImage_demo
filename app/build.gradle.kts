@@ -44,4 +44,11 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation("jp.co.cyberagent.android:gpuimage:2.1.0")
+
+    // ExoPlayer
+    implementation("com.google.android.exoplayer:exoplayer-core:2.19.1")
+    implementation("com.google.android.exoplayer:exoplayer-dash:2.19.1")
+
+    // FFmpeg 用于格式转换（可选）
+    implementation("com.arthenica:mobile-ffmpeg-full:4.4.LTS")
 }

@@ -14,11 +14,11 @@
         android:textStyle="bold"
         android:layout_marginBottom="8dp"/>
 
-    <ImageView
-        android:id="@+id/filteredImageView"
-        android:layout_width="wrap_content"
-        android:layout_height="400dp"
-        android:scaleType="centerInside"/>
+    <jp.co.cyberagent.android.gpuimage.GPUImageView
+        android:id="@+id/gpu_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="center"/>
 
     <SeekBar
         android:id="@+id/filterAdjustSeekBar"

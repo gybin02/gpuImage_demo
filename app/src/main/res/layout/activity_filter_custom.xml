@@ -10,10 +10,19 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center" />
 
-<!--    <ImageView-->
-<!--        android:id="@+id/iv_content"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="400dp"-->
-<!--        android:scaleType="centerInside" />-->
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存成视频到相册"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/iv_content"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="400dp"-->
+    <!--        android:scaleType="centerInside" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

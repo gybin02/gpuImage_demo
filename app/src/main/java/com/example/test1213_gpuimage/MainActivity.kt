@@ -25,6 +25,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.example.test1213_gpuimage.rv.FilterGalleryActivity
+import com.example.test1213_gpuimage.transition.TransitionRvActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -50,15 +51,18 @@ class MainActivity : AppCompatActivity() {
         findViewById<View>(R.id.button_gallery_rv).setOnClickListener {
             startActivity(Intent(this, FilterGalleryActivity::class.java))
         }
+        findViewById<View>(R.id.button_transition_rv).setOnClickListener {
+            startActivity(Intent(this, TransitionRvActivity::class.java))
+        }
         findViewById<View>(R.id.button_gl_translate).setOnClickListener {
-            startActivity(Intent(this, TestGlTranslateActivity::class.java))
+            startActivity(Intent(this, TransitionUseImageViewActivity::class.java))
 
         }
 
         findViewById<View>(R.id.button_gpu_gl_translate).setOnClickListener {
 //            startActivity(Intent(this, TestGpuGlslActivity::class.java))
             startActivity(Intent(this, TransitionActivity::class.java))
-
+//            startActivity(Intent(this, TransitionUseImageViewActivity::class.java))
         }
 
 
@@ -67,7 +71,7 @@ class MainActivity : AppCompatActivity() {
     override fun onRequestPermissionsResult(
         requestCode: Int,
         permissions: Array<String>,
-        grantResults: IntArray
+        grantResults: IntArray,
     ) {
         if (requestCode == REQUEST_CAMERA && grantResults.size == 2
             && grantResults[0] == PackageManager.PERMISSION_GRANTED

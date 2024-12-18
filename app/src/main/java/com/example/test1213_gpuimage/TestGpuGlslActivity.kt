@@ -134,40 +134,42 @@
 //}
 //
 //
-//// 加载 GLSL 文件内容
-//fun loadShaderFromAssets(): String {
-////        return File(filePath).readText(Charsets.UTF_8)
-//    return """
-//            precision mediump float;
-//
-//            varying vec2 textureCoordinate;
-//
-//            uniform sampler2D inputImageTexture;   // 当前纹理
-//            uniform sampler2D inputImageTexture2; // 下一个纹理
-//
-//            uniform float progress;   // 过渡进度
-//            uniform float dots;       // 参数 dots
-//            uniform vec2 center;      // 参数中心点
-//
-//            const float SQRT_2 = 1.414213562373;
-//
-//            vec4 getFromColor(vec2 uv) {
-//                return texture2D(inputImageTexture, uv);
-//            }
-//
-//            vec4 getToColor(vec2 uv) {
-//                return texture2D(inputImageTexture2, uv);
-//            }
-//
-//            vec4 transition(vec2 uv) {
-//                bool nextImage = distance(fract(uv * dots), vec2(0.5, 0.5)) < (progress / distance(uv, center));
-//                return nextImage ? getToColor(uv) : getFromColor(uv);
-//            }
-//
-//            void main() {
-//                gl_FragColor = transition(textureCoordinate);
-//            }
-//        """.trimIndent()
-//}
+// 加载 GLSL 文件内容
+fun loadShaderFromAssets(): String {
+//        return File(filePath).readText(Charsets.UTF_8)
+    return """
+            precision mediump float;
+
+            varying vec2 textureCoordinate;
+            varying vec2 textureCoordinate2;
+
+            uniform sampler2D inputImageTexture;   // 当前纹理
+            uniform sampler2D inputImageTexture2; // 下一个纹理
+
+            uniform float progress;   // 过渡进度
+            uniform float dots;       // 参数 dots
+            uniform vec2 center;      // 参数中心点
+
+            const float SQRT_2 = 1.414213562373;
+
+            vec4 getFromColor(vec2 uv) {
+                return texture2D(inputImageTexture, uv);
+            }
+
+            vec4 getToColor(vec2 uv) {
+                return texture2D(inputImageTexture2, uv);
+            }
+
+            vec4 transition(vec2 uv) {
+                bool nextImage = distance(fract(uv * dots), vec2(0.5, 0.5)) < (progress / distance(uv, center));
+                return nextImage ? getToColor(uv) : getFromColor(uv);
+            }
+
+            void main() {
+                gl_FragColor = transition(textureCoordinate);
+            }
+        """.trimIndent()
+
+}
 //
 //

@@ -25,6 +25,8 @@ class FilterGalleryActivity : AppCompatActivity() {
         originalBitmap = BitmapFactory.decodeResource(resources, R.drawable.sample_image)
 
         filterRecyclerView = findViewById(R.id.filterRecyclerView)
+        filterRecyclerView.setItemViewCacheSize(Int.MAX_VALUE) // 无限缓存
+        filterRecyclerView.recycledViewPool.setMaxRecycledViews(0, 0) // 禁用池
         filterRecyclerView.layoutManager = LinearLayoutManager(this)
 
         // Create filter list

@@ -37,12 +37,21 @@
             tools:ignore="HardcodedText" />
 
         <Button
+            android:id="@+id/button_transition_rv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:drawableTop="@android:drawable/ic_menu_gallery"
+            android:text="Transition Gallery All 转换动画"
+            tools:ignore="HardcodedText" />
+
+        <Button
             android:id="@+id/button_gl_translate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:drawableTop="@android:drawable/ic_menu_gallery"
-            android:text="测试 Gl-translation"
+            android:text="测试 ImageView Gl-translation"
             tools:ignore="HardcodedText" />
 
         <Button
