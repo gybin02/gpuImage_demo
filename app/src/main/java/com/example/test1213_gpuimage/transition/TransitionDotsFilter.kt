@@ -3,8 +3,8 @@ package com.example.test1213_gpuimage.transition
 import android.opengl.GLES20
 import jp.co.cyberagent.android.gpuimage.filter.GPUImageTwoInputFilter
 
-//双图片过渡动画，自定义的 ( https://gl-transitions.com/editor/PolkaDotsCurtain)
-class TransitionFilter : GPUImageTwoInputFilter(fragmentShader) {
+//点状 双图片过渡动画，自定义的 ( https://gl-transitions.com/editor/PolkaDotsCurtain)
+class TransitionDotsFilter : GPUImageTwoInputFilter(fragmentShader) {
     companion object{
 
         val fragmentShader = """

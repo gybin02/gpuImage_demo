@@ -8,7 +8,7 @@ import android.media.MediaFormat
 import android.media.MediaMuxer
 import android.opengl.GLSurfaceView
 import android.util.Log
-import com.example.test1213_gpuimage.transition.TransitionTestFilter
+import com.example.test1213_gpuimage.transition.TransitionRippleFilter
 import jp.co.cyberagent.android.gpuimage.GPUImage
 import java.io.File
 
@@ -44,7 +44,7 @@ class VideoTransitionRenderer(private val context: Context) {
             val gpuImage = GPUImage(context).apply {
                 setGLSurfaceView(inputSurface as GLSurfaceView)
             }
-            val transitionFilter = TransitionTestFilter().apply {
+            val transitionFilter = TransitionRippleFilter().apply {
                 this.bitmap = bitmap2
             }
             gpuImage.setFilter(transitionFilter)

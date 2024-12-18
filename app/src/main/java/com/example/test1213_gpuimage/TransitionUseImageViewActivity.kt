@@ -5,7 +5,9 @@ import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.test1213_gpuimage.transition.TransitionBaseFilter
 import com.example.test1213_gpuimage.transition.TransitionBlendFilter
+import com.example.test1213_gpuimage.transition.glsl.GlslRepo
 import jp.co.cyberagent.android.gpuimage.GPUImage
 
 //GPUImage + TwoInputFilter 实现
@@ -24,12 +26,19 @@ class TransitionUseImageViewActivity : AppCompatActivity() {
 
         val gpuImage = GPUImage(this)
         gpuImage.setImage(fromBitmap) // 原始图像
-        // 创建过渡滤镜
-//        val transitionFilter = TransitionFilter()
+        // 创建过渡滤镜，失败，无法效果
+//        val transitionFilter = TransitionDotsFilter()
+        //可以正常使用
         val transitionFilter = TransitionBlendFilter()
+        //TODO 失败
+//        val shaderFile = GlslRepo.basicList.get(0)
+//        val fragmentShader = shaderFile.getFragmentShader(this)
+//        //创建filter
+//        val transitionFilter = TransitionBaseFilter(fragmentShader)
+
         transitionFilter.bitmap = toBitmap
         //TODO 测试发现 TransitionBlendFilter 可以使用ImageView加载
-        //但是自定义的另一个filter transitionFilter就失败，只能用GPUImageView加载。
+        //但是自定义的另一个filter TransitionDotsFilter就失败，只能用GPUImageView加载。
         //唯一的差别的 glsl文件不一样
         // 设置 GPUImageView
         gpuImage.setFilter(transitionFilter)

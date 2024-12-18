@@ -5,7 +5,7 @@ import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.example.test1213_gpuimage.transition.TransitionTestFilter
+import com.example.test1213_gpuimage.transition.TransitionRippleFilter
 import com.example.test1213_gpuimage.video.VideoTransitionRenderer3
 import jp.co.cyberagent.android.gpuimage.GPUImageView
 
@@ -13,7 +13,7 @@ import jp.co.cyberagent.android.gpuimage.GPUImageView
 class TransitionActivity : AppCompatActivity() {
 
     private lateinit var gpuImageView: GPUImageView
-    private lateinit var transitionFilter: TransitionTestFilter
+    private lateinit var transitionFilter: TransitionRippleFilter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,7 +26,8 @@ class TransitionActivity : AppCompatActivity() {
         val bitmap2 = BitmapFactory.decodeResource(resources, R.drawable.sample_image2)
 
         // 创建过渡滤镜
-        transitionFilter = TransitionTestFilter()
+        transitionFilter = TransitionRippleFilter()
+//        TransitionTestFilter()
 
         gpuImageView.setImage(bitmap1)
         // 使用 setInputTexture 方法设置两个纹理

@@ -11,7 +11,7 @@ import android.net.Uri
 import android.os.Environment
 import android.util.Log
 import com.arthenica.mobileffmpeg.FFmpeg
-import com.example.test1213_gpuimage.transition.TransitionTestFilter
+import com.example.test1213_gpuimage.transition.TransitionRippleFilter
 import com.google.android.exoplayer2.ExoPlayer
 import com.google.android.exoplayer2.MediaItem
 import com.google.android.exoplayer2.source.ProgressiveMediaSource
@@ -29,7 +29,7 @@ class VideoTransitionRenderer3(private val context: Context) {
         val tempDir = File(context.externalCacheDir, "transition_frames")
         tempDir.mkdirs()
 
-        val transitionFilter = TransitionTestFilter()
+        val transitionFilter = TransitionRippleFilter()
         val gpuImage = GPUImage(context).apply {
             setFilter(transitionFilter)
             setImage(bitmap1)
@@ -66,7 +66,7 @@ class VideoTransitionRenderer3(private val context: Context) {
         gpuImage: GPUImage,
         bitmap1: Bitmap,
         bitmap2: Bitmap,
-        transitionFilter: TransitionTestFilter,
+        transitionFilter: TransitionRippleFilter,
         tempDir: File
     ): List<Bitmap> {
         val frameFiles = mutableListOf<Bitmap>()

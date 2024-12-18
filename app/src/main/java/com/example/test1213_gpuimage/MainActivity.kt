@@ -21,6 +21,8 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
+import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -63,6 +65,14 @@ class MainActivity : AppCompatActivity() {
 //            startActivity(Intent(this, TestGpuGlslActivity::class.java))
             startActivity(Intent(this, TransitionActivity::class.java))
 //            startActivity(Intent(this, TransitionUseImageViewActivity::class.java))
+        }
+
+        val linearLayout = findViewById<LinearLayout>(R.id.ll_content)
+        val button = Button(this)
+        button.text = "Basic 基础过渡动画"
+        linearLayout.addView(button)
+        button.setOnClickListener {
+            startActivity(Intent(this, TestGpuGlslActivity::class.java))
         }
 
 

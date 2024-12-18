@@ -1,19 +1,13 @@
 package com.example.test1213_gpuimage.transition
 
 import android.opengl.GLES20
-import com.example.test1213_gpuimage.transition.glsl.GlslRepo
 import jp.co.cyberagent.android.gpuimage.filter.GPUImageTwoInputFilter
 
-//双图片过渡动画，自定义的 ( https://gl-transitions.com/editor/PolkaDotsCurtain)
-class TransitionTestFilter : GPUImageTwoInputFilter(fragmentShader) {
-    companion object{
-
-        val fragmentShader = GlslRepo.fragmentShader
-            .replace(
-                "vec4 transition(vec2 uv);",
-                GlslRepo.ripple
-            )
-    }
+/**
+ * 双图片过渡动画，自定义的 ( https://gl-transitions.com/editor/PolkaDotsCurtain)
+ *  @param fragmentShader 着色器
+ * */
+class TransitionBaseFilter(fragmentShader: String) : GPUImageTwoInputFilter(fragmentShader) {
 
     private var progressLocation: Int = 0
 
@@ -32,6 +26,12 @@ class TransitionTestFilter : GPUImageTwoInputFilter(fragmentShader) {
     fun setProgress(progress: Float) {
         this.progress = progress
         setFloat(progressLocation, progress)
+    }
+
+    companion object {
+//        fun buildFragmentShader(context: Context, shaderFile: ShaderFile): String {
+//            return GlslRepo.loadShaderFromAssets(context, shaderFile)
+//        }
     }
 
 }

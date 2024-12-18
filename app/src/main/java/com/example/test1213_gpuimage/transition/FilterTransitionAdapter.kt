@@ -9,6 +9,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.test1213_gpuimage.R
+import com.example.test1213_gpuimage.transition.glsl.GlslRepo
+import jp.co.cyberagent.android.gpuimage.GPUImage
 import jp.co.cyberagent.android.gpuimage.GPUImageView
 
 class FilterTransitionAdapter(
@@ -30,14 +32,17 @@ class FilterTransitionAdapter(
 
     override fun onBindViewHolder(holder: FilterViewHolder, position: Int) {
         // Set filter name
-        holder.filterNameTextView.text = "Test"
+        val shaderFile = GlslRepo.basicList[position]
+        holder.filterNameTextView.text = shaderFile.name
 
         // Setup GPUImage
         val imageView = holder.gpuImageView
-//        imageView.setScaleType(GPUImage.ScaleType.CENTER_INSIDE)
+        //居中下
+        imageView.setScaleType(GPUImage.ScaleType.CENTER_INSIDE)
         imageView.setImage(fromBitmap)
+        val fragmentShader = shaderFile.getFragmentShader(context)
 //        测试图片 gl_动画变化
-        val transitionFilter = TransitionTestFilter()
+        val transitionFilter = TransitionBaseFilter(fragmentShader)
         transitionFilter.bitmap = toBitmap
         imageView.setFilter(transitionFilter)
 
@@ -88,7 +93,7 @@ class FilterTransitionAdapter(
         return newBitmap
     }
 
-    override fun getItemCount() = 10
+    override fun getItemCount() = GlslRepo.basicList.size
 
     protected fun range(percentage: Int, start: Float, end: Float): Float {
         return (end - start) * percentage / 100.0f + start
