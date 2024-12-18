@@ -10,13 +10,21 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.test1213_gpuimage.R
 import com.example.test1213_gpuimage.transition.glsl.GlslRepo
+import com.example.test1213_gpuimage.transition.glsl.ShaderFile
 import jp.co.cyberagent.android.gpuimage.GPUImage
 import jp.co.cyberagent.android.gpuimage.GPUImageView
 
+/**
+ * @param shaderPath "basic"
+ * @param context
+ * @param fromBitmap 图片1
+ * @param toBitmap 图片2
+ */
 class FilterTransitionAdapter(
     private val fromBitmap: Bitmap,
     private val toBitmap: Bitmap,
     private val context: Context,
+    val shaderPath: String,
 ) : RecyclerView.Adapter<FilterTransitionAdapter.FilterViewHolder>() {
 
     class FilterViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -32,7 +40,7 @@ class FilterTransitionAdapter(
 
     override fun onBindViewHolder(holder: FilterViewHolder, position: Int) {
         // Set filter name
-        val shaderFile = GlslRepo.basicList[position]
+        val shaderFile = getShaderList()[position]
         holder.filterNameTextView.text = shaderFile.name
 
         // Setup GPUImage
@@ -83,7 +91,7 @@ class FilterTransitionAdapter(
         animator.start()
     }
 
-    fun alphaBitmap(fromBitmap:Bitmap,progress: Float): Bitmap {
+    fun alphaBitmap(fromBitmap: Bitmap, progress: Float): Bitmap {
         val alpha = (progress * 255).toInt()
         val newBitmap = Bitmap.createBitmap(fromBitmap.width, fromBitmap.height, Bitmap.Config.ARGB_8888)
         val canvas = android.graphics.Canvas(newBitmap)
@@ -97,6 +105,10 @@ class FilterTransitionAdapter(
 
     protected fun range(percentage: Int, start: Float, end: Float): Float {
         return (end - start) * percentage / 100.0f + start
+    }
+
+    fun getShaderList(): List<ShaderFile> {
+        return GlslRepo.getShaderList(shaderPath)
     }
 
 //    fun pixFilterTest() {

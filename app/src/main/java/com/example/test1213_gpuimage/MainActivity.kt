@@ -72,7 +72,14 @@ class MainActivity : AppCompatActivity() {
         button.text = "Basic 基础过渡动画"
         linearLayout.addView(button)
         button.setOnClickListener {
-            startActivity(Intent(this, TestGpuGlslActivity::class.java))
+            val intent = Intent(this, TransitionRvActivity::class.java)
+//            "basic" -> GlslRepo.basicList
+//            "effect" -> GlslRepo.effectList
+//            "light" -> GlslRepo.lightList
+//            "mask" -> GlslRepo.maskList
+//            "slide" -> GlslRepo.slideList
+            intent.putExtra(TransitionRvActivity.KEY_SHADER_PATH,"slide")
+            startActivity(intent)
         }
 
 

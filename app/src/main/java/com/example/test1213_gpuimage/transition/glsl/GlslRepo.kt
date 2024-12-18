@@ -53,6 +53,18 @@ object GlslRepo {
 
     """.trimIndent()
 
+    //获取动画列表
+    fun getShaderList(shaderPath: String): List<ShaderFile> {
+        return when (shaderPath) {
+            "basic" -> GlslRepo.basicList
+            "effect" -> GlslRepo.effectList
+            "light" -> GlslRepo.lightList
+            "mask" -> GlslRepo.maskList
+            "slide" -> GlslRepo.slideList
+            else -> GlslRepo.basicList
+        }
+    }
+
     val basicList = listOf(
         ShaderFile("basic", "multiply_blend.glsl"),
         ShaderFile("basic", "overexposure.glsl"),
