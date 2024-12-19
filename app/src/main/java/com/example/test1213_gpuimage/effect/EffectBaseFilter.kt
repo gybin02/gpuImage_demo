@@ -6,7 +6,8 @@ import jp.co.cyberagent.android.gpuimage.filter.GPUImageFilter
 /**
  * 图片特效滤镜
  */
-class EffectBaseFilter(shader:String) : GPUImageFilter(NO_FILTER_VERTEX_SHADER, shader) {
+//NO_FILTER_VERTEX_SHADER
+class EffectBaseFilter(shader:String) : GPUImageFilter(EffectGlslRepo.vertexShader, shader) {
     private var uTime = 0f
     private var uTimeLocation: Int = 0
     private var ratioLocation: Int = 0
@@ -26,7 +27,7 @@ class EffectBaseFilter(shader:String) : GPUImageFilter(NO_FILTER_VERTEX_SHADER, 
     override fun onInitialized() {
         super.onInitialized()
         setUTime(0f)
-        setRatio(0f)
+        setRatio(1f)
         setUResolution(1f, 1f)
     }
 
@@ -34,6 +35,7 @@ class EffectBaseFilter(shader:String) : GPUImageFilter(NO_FILTER_VERTEX_SHADER, 
         this.uTime = uTime
         setFloat(uTimeLocation, this.uTime)
     }
+
     fun setRatio(ratio: Float) {
         setFloat(ratioLocation, ratio)
     }

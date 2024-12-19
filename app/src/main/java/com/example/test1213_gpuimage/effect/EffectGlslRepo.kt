@@ -7,28 +7,51 @@ import com.example.test1213_gpuimage.transition.glsl.ShaderFile
 //单图图片效果
 object EffectGlslRepo {
     //Fragment 过渡动画着色器
+//    val fragmentShader = """
+//        precision highp float;
+//        uniform float uTime;
+//        uniform float ratio;
+//        uniform sampler2D inputImageTexture;
+//        uniform vec2 uResolution;
+//        varying vec2 textureCoordinate;
+//
+//        vec4 effect(vec2 uv);
+//
+//        void main()
+//        {
+//            gl_FragColor = effect(textureCoordinate);
+//        }
+//    """.trimIndent()
     val fragmentShader = """
-        precision highp float;
+         precision highp float;
         uniform float uTime;
         uniform float ratio;
         uniform sampler2D inputImageTexture;
         uniform vec2 uResolution;
         varying vec2 textureCoordinate;
-
+        
         vec4 effect(vec2 uv);
-
-        void main()
-        {
-            gl_FragColor = effect(textureCoordinate);
+        
+        void main() {
+            gl_FragColor = texture2D(inputImageTexture, textureCoordinate) + effect(textureCoordinate);
         }
     """.trimIndent()
+    //顶点
+    val vertexShader = """
+        precision highp float;
 
+        uniform mat4 uMatrix;
+        attribute vec4 position;
+        attribute vec2 inputTextureCoordinate;
+        attribute float alpha;
+        
+        varying vec2 textureCoordinate;
+        varying float inAlpha;
 
-    //测试图片特效
-    val ripple = """
-        vec4 effect(vec2 uv) {
-            float waveu = sin((uv.y + uTime) * 20.0) * 0.08;
-            return texture2D(texture, uv + vec2(waveu, 0.0));
+        void main(){
+            gl_Position = position;
+            textureCoordinate = inputTextureCoordinate.xy;
+            inAlpha = alpha;
         }
     """.trimIndent()
 
@@ -77,11 +100,13 @@ object EffectGlslRepo {
     fun getFragmentShader(context: Context, shaderFile: ShaderFile): String {
         if (shaderFile.content.isEmpty()) {
             val shaderContent = GlslRepo.loadFromAssets(context, "effect/${shaderFile.path}/${shaderFile.name}")
-
+            val newContent = shaderContent.replace("texture","inputImageTexture").apply {
+                replace("gl_FragCoord", "textureCoordinate")
+            }
             shaderFile.content = fragmentShader
                 .replace(
                     "vec4 effect(vec2 uv);",
-                    shaderContent
+                    newContent
                 )
         }
         return shaderFile.content

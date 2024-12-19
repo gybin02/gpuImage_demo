@@ -1,6 +1,5 @@
 package com.example.test1213_gpuimage.effect
 
-import android.animation.ValueAnimator
 import android.content.Context
 import android.graphics.Bitmap
 import android.view.LayoutInflater
@@ -51,8 +50,27 @@ class EffectFilterAdapter(
         val fragmentShader = EffectGlslRepo.getFragmentShader(context,shaderFile)
 //        测试图片 gl_动画变化
         val transitionFilter = EffectBaseFilter(fragmentShader)
-//        transitionFilter.setUTime(System.currentTimeMillis().toFloat())
         imageView.setFilter(transitionFilter)
+//        transitionFilter.setUTime( 0.016f *10)
+        transitionFilter.setUResolution(fromBitmap.width.toFloat(),fromBitmap.height.toFloat())
+//
+//        imageView.requestRender() // 渲染
+        // 动态更新 uTime
+        Thread {
+            var time = 0f
+            while (true) {
+                time += 0.05f // 每帧增加的时间
+                transitionFilter.setUTime(time)
+                imageView.requestRender() // 请求重新渲染
+                try {
+                    Thread.sleep(16) // 控制帧率（大约60FPS）
+                } catch (e: InterruptedException) {
+                    e.printStackTrace()
+                }
+            }
+        }.start()
+       //部分mix效果还是无法加载比如：heart_flicker.glsl
+        //由于使用了gl_FragCoord 和 uResolution 导致必须传入正确的数据才行
 
 
         //测试图片像素变化
@@ -77,7 +95,7 @@ class EffectFilterAdapter(
         return newBitmap
     }
 
-    override fun getItemCount() = GlslRepo.basicList.size
+    override fun getItemCount() = getShaderList().size
 
     protected fun range(percentage: Int, start: Float, end: Float): Float {
         return (end - start) * percentage / 100.0f + start
